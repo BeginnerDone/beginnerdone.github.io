@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Next 侧边添加新的自定义连接</title>
+    <url>/2020/03/16/createnewlayout/</url>
+    <content><![CDATA[<p><strong>Next 自己的页面布局并不能满足要求的时候，就要自己自定义布局页面</strong></p>
+<hr>
+<p>1.新建一个工具栏的侧边栏</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page tools</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>2.<code>Next</code> 主题配置<code>_config.yml</code>文件<code>menu</code>选项增加<code>tools</code>的链接和<code>icon</code><br><img src="https://img-blog.csdnimg.cn/20200316123900302.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>3.languages文件夹中增加tools文字显示<br><img src="https://img-blog.csdnimg.cn/20200316124014990.png" alt="在这里插入图片描述"><br>4.显示工具的图标gears。这里的图标全部取之于<a href="https://fontawesome.dashgame.com/">Font-Awesome</a><br><img src="https://img-blog.csdnimg.cn/2020031612442176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>5.效果<br><img src="https://img-blog.csdnimg.cn/20200316124509617.png" alt="在这里插入图片描述"></p>
+<p><strong>千里之行<br>始于足下</strong></p>
+]]></content>
+      <categories>
+        <category>github pages hexo建站</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github pages+hexo 绑定域名</title>
+    <url>/2020/03/13/github-artical/</url>
+    <content><![CDATA[<p>上一章说到<a href="https://blog.csdn.net/u012733501/article/details/104815568">github pages+hexo 搭建自己的个人博客</a>  ，尚未关联自己的域名，毕竟<code>github pages</code>的 <code>username.github.io</code> 并不怎么好记和美观</p>
+<hr>
+<a id="more"></a>
+<p>@<a href="文章目录">TOC</a></p>
+<h2 id="申请域名"><a href="#申请域名" class="headerlink" title="申请域名"></a>申请域名</h2><p>这里我在<a href="https://www.aliyun.com/">阿里云</a>申请的域名，腾讯云、万维等都可以，你自己选择。<br>1、添加两条记录<br><img src="https://img-blog.csdnimg.cn/20200313153122717.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200313153209840.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>其实说白了就是说解析带www和不带www的地址。<br>基本上这就ok了。<br><strong>但是切记！一定要实名认证！实名认证！实名认证</strong><br>可以看到这里未实名认证，是无法DNS解析的<br><img src="https://img-blog.csdnimg.cn/20200313153356282.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="hexo绑定CNAME"><a href="#hexo绑定CNAME" class="headerlink" title="hexo绑定CNAME"></a>hexo绑定CNAME</h2><p>你的博客<code>source</code>目录建立<code>CNAME</code>文件，不带后缀，里面输入你的域名。比如我这里的域名是<a href="http://www.beginnerdone.top">beginnerdone.top</a>，那么输入<a href="http://www.beginnerdone.top">beginnerdone.top</a>即可<br><img src="https://img-blog.csdnimg.cn/20200313153650937.png" alt="在这里插入图片描述"><br>执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+<p>完成部署。</p>
+<h2 id="github绑定域名"><a href="#github绑定域名" class="headerlink" title="github绑定域名"></a>github绑定域名</h2><p>博客setting项中的，github pages选项添加你的域名并保存<br><img src="https://img-blog.csdnimg.cn/20200313153920844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p>直接访问<a href="http://beginnerdone.top/">我的博客</a></p>
+<p><strong>千里之行<br>始于足下</strong></p>
+]]></content>
+      <categories>
+        <category>github pages hexo建站</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github pages+hexo 搭建自己的个人博客</title>
+    <url>/2020/03/12/githubpages-website/</url>
+    <content><![CDATA[<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>1.输入仓库的名称和说明（非必填），仓库名称格式为<code>username.github.io</code>,<strong>username 一定要和用户名一致，否则会404的</strong></p>
+<a id="more"></a>
+<p><img src="https://img-blog.csdnimg.cn/20200312115314279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>2.点击 Create repository创建仓库<br><img src="https://img-blog.csdnimg.cn/2020031212021255.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="创建站点"><a href="#创建站点" class="headerlink" title="创建站点"></a>创建站点</h2><p>1.点击仓库中的setting<br><img src="https://img-blog.csdnimg.cn/20200312120336150.png" alt="在这里插入图片描述"><br>2.找到GitHub Pages 为站点选一个主题<br><img src="https://img-blog.csdnimg.cn/20200312120514883.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="hexo使用"><a href="#hexo使用" class="headerlink" title="hexo使用"></a>hexo使用</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p> 安装hexo 之前首先安装<a href="https://git-scm.com/download/">git</a> 以及<a href="https://nodejs.org/en/download/">node.js</a>.<br>使用npm 全局安装hexo </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h3 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h3><p>执行以下命令，创建hexo所需文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo  init</span><br></pre></td></tr></table></figure>
+<p>在初始化的文件夹中下载依赖</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>注意<code>_config.yml</code>文件，网站的 配置 信息，可以在此配置大部分的参数。具体参考<a href="https://hexo.io/zh-cn/docs/configuration">配置信息</a></p>
+<h3 id="修改-config-yml文件并部署到github上"><a href="#修改-config-yml文件并部署到github上" class="headerlink" title="修改_config.yml文件并部署到github上"></a>修改_config.yml文件并部署到github上</h3><h4 id="修改-config-yml中"><a href="#修改-config-yml中" class="headerlink" title="修改_config.yml中"></a>修改_config.yml中</h4><p>原有：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: ‘’</span><br></pre></td></tr></table></figure>
+<p>改为：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:BeginnerDone/beginnerdone.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: 第一次部署</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td>使用何种方式进行部署（有git、Heroku、Netlify等等）</td>
+<td>必填一种</td>
+</tr>
+<tr>
+<td>repo</td>
+<td>库（Repository）地址</td>
+<td>我这里使用的是ssh 验证，因为https地址每次输入账号和密码是很麻烦的一件事！推荐使用ssh，没有ssh key的请先生成添加到github上</td>
+</tr>
+<tr>
+<td>branch</td>
+<td>分支名称</td>
+<td>gh-pages (GitHub)    coding-pages  (Coding.net  master (others)</td>
+</tr>
+<tr>
+<td>message</td>
+<td>提交信息</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>以上参数冒号后面的参数一定要加空格！空格！空格！</strong></p>
+<h4 id="部署访问站点"><a href="#部署访问站点" class="headerlink" title="部署访问站点"></a>部署访问站点</h4><pre><code>执行</code></pre><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>访问我的<a href="https://beginnerdone.github.io/">github pages 博客</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200312141308417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<hr>
+<h2 id="更改hexo主题"><a href="#更改hexo主题" class="headerlink" title="更改hexo主题"></a>更改hexo主题</h2><p>这里替换的是<a href="http://theme-next.iissnan.com/getting-started.html">Next</a>主题</p>
+<h3 id="安装Next"><a href="#安装Next" class="headerlink" title="安装Next"></a>安装Next</h3><p>只需要将主题文件拷贝至站点目录的 <code>themes</code> 目录下，然后修改<code>_config.yml</code>文件中的<code>theme</code>节点为<code>next</code>即可<br><img src="https://img-blog.csdnimg.cn/20200312145236454.png" alt="在这里插入图片描述"><br>当然了，不用自己去拷贝那么麻烦，只需要在当前站点文件夹下<br>使用<code>git</code>命令下载<code>next</code>即可</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git clone https:<span class="comment">//github.com/iissnan/hexo-theme-next themes/next</span></span><br></pre></td></tr></table></figure>
+<p>查看<code>theme</code>文件夹已经下好了<code>next</code>主题<br><img src="https://img-blog.csdnimg.cn/20200312145515337.png" alt="在这里插入图片描述"></p>
+<h4 id="主题设定"><a href="#主题设定" class="headerlink" title="主题设定"></a>主题设定</h4><p><strong>外观<code>Scheme</code>选择</strong></p>
+<p><code>Next</code>提供三种 不同的<code>Scheme</code>外观</p>
+<p>1.<code>Muse</code> - 默认 <code>Scheme</code>，这是 NexT 最初的版本，黑白主调，大量留白<br>2.<code>Mist</code> - <code>Muse</code> 的紧凑版本，整洁有序的单栏外观<br>3.<code>Pisces</code> - 双栏 <code>Scheme</code>，小家碧玉似的清新<br>只需要在<code>themes\next</code>中的<code>_config.yml</code>中<code>scheme</code>节点启用即可<br>例如这里启用了<code>Mist</code><br><img src="https://img-blog.csdnimg.cn/20200312162628600.png" alt="在这里插入图片描述"><br><strong>设置语言</strong><br>设置根目录<code>_config.yml</code>中的language 为中文，</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">language: zh-Hans</span><br></pre></td></tr></table></figure>
+<p>后续配置参考<a href="http://theme-next.iissnan.com/getting-started.html#select-scheme">Next</a></p>
+<h3 id="再次部署"><a href="#再次部署" class="headerlink" title="再次部署"></a>再次部署</h3><p>这里要特别注意，更换主题后，再次部署的时候要执行下，</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/2020031214571113.png" alt="在这里插入图片描述"><br>然后再执行<code>hexo deploy --generate</code>（简写<code>hexo d -g</code>）生成文件自动部署</p>
+<hr>
+<h4 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h4><p>1.访问首页和归档的时候总是404<br>    url地址后面总会多出%20编码，通过<a href="https://tool.oschina.net/encode?type=4">在线编码转换</a>查出url地址多出了空格。<br>    解决办法就是<code>themes\next</code>中的<code>_config.yml</code>中<code>menu</code>选项中空格全部去掉，比如<code>/archives/</code>后面的空格就要去掉<br>    <img src="https://img-blog.csdnimg.cn/20200312172925521.png" alt="在这里插入图片描述"></p>
+<p>个人博客地址：<a href="https://beginnerdone.github.io/">传送门</a><br>github：<a href="https://github.com/BeginnerDone/beginnerdone.github.io">传送门</a><br><strong>千里之行<br>始于足下</strong></p>
+]]></content>
+      <categories>
+        <category>github pages hexo建站</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+</search>
