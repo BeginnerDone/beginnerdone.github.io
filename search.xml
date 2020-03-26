@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>article_1</title>
+    <url>/2020/03/26/article-1/</url>
+    <content><![CDATA[<blockquote>
+<p> 最近部署hexo个人博客的时候 ，报错<br><img src="https://img-blog.csdnimg.cn/20200326110528149.png" alt="在这里插入图片描述"></p>
+</blockquote>
+<p>然后一顿操作都没用，最后羞耻的发现 163邮箱需要验证。。。。为啥163邮箱需要验证。。。163邮箱咋地了<br><img src="https://img-blog.csdnimg.cn/20200326110641407.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200326110626444.png" alt="在这里插入图片描述"><br>最后直接吧163邮箱更换为outlook邮箱了<br><img src="https://img-blog.csdnimg.cn/20200326110828442.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在次执行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<p>完美部署</p>
+<p><strong>千里之行<br>始于足下</strong></p>
+]]></content>
+      <categories>
+        <category>github pages hexo建站</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Next 侧边添加新的自定义连接</title>
     <url>/2020/03/16/createnewlayout/</url>
     <content><![CDATA[<p><strong>Next 自己的页面布局并不能满足要求的时候，就要自己自定义布局页面</strong></p>
