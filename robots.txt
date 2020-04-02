@@ -3,6 +3,8 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
+Allow: /tools/
+Allow: /resourcelinks/
 
 Disallow: /vendors/
 Disallow: /js/
