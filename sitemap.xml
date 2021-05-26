@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://beginnerdone.github.io/vue/vue-debug.html</loc>
+    
+    <lastmod>2021-05-26T06:34:55.600Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://beginnerdone.github.io/eslint.html</loc>
     
     <lastmod>2020-12-23T09:56:34.366Z</lastmod>
