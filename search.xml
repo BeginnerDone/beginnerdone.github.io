@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>前端运行</title>
+    <url>/doc.html</url>
+    <content><![CDATA[<h1 id="node安装"><a href="#node安装" class="headerlink" title="node安装"></a>node安装</h1><h2 id="方式一-："><a href="#方式一-：" class="headerlink" title="方式一 ："></a>方式一 ：</h2><blockquote>
+<p>直接安装node</p>
+</blockquote>
+<p>  访问地址：<a href="https://nodejs.org/zh-cn/download/releases/">node版本下载地址</a><br>  这里以<code>14.5.4</code>版本为例（尽量高于<code>14.5.4</code>，本项目node-sass基于的node或高于<code>14.5.4</code>）</p>
+<a id="more"></a>
+
+<p>  选择<code>14.5.4</code>版本点击下载<br>  <img src="/doc/2.png" alt="下载node"><br>  选择你系统对应的<code>64</code>位或者<code>32</code>位的<code>node</code><br>  <img src="/doc/1.png" alt="下载node"></p>
+<h2 id="方式二-："><a href="#方式二-：" class="headerlink" title="方式二 ："></a>方式二 ：</h2><blockquote>
+<p>使用node管理工具安装（<font color="red"> 推荐 </font>）<br>   <strong>Unix / OS X</strong>:<br>安装：<a href="https://nodejs.org/zh-cn/download/package-manager/#nvm">https://nodejs.org/zh-cn/download/package-manager/#nvm</a></p>
+</blockquote>
+<p>   <strong>Windows</strong><br>    安装<a href="https://github.com/coreybutler/nvm-windows">nvm</a><br>    1.点击<a href="https://github.com/coreybutler/nvm-windows/releases">releases</a>进行安装<br>    2.选择最新的版本进行下载安装(<br>    <img src="/doc/3.png" alt="nvm"><br>    3.下载完成安装过程中。若出现以下提示，选择是让<code>nvm</code>管理原安装过的<code>node</code><br>    <img src="/doc/4.png" alt="nvm"><br>    4.安装之后常用命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm ls &#x2F;&#x2F; 查看目前已经安装的版本</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm install 14.5.4  &#x2F;&#x2F; 安装指定的版本的nodejs</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use 14.5.4  &#x2F;&#x2F; 使用指定版本的nodejs</span><br></pre></td></tr></table></figure>
+<h1 id="nrm安装"><a href="#nrm安装" class="headerlink" title="nrm安装"></a>nrm安装</h1><blockquote>
+<p>管理不同镜像源</p>
+</blockquote>
+<p>对于国内环境。有时在下载依赖时，会出现安装失败的情况，而有时有需要访问其他源，如<code>npm</code>本身源，进行提交<code>npm</code>包等。</p>
+<p>1.安装<code>nrm</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g nrm</span><br></pre></td></tr></table></figure>
+<p>2.常用命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nrm ls &#x2F;&#x2F; 查看所有的镜像源列表</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use taobao  &#x2F;&#x2F; 切换为淘宝镜像</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use taobao  &#x2F;&#x2F; 测试镜像速度</span><br></pre></td></tr></table></figure>
+<p><img src="/doc/5.png" alt="nvm"></p>
+<h1 id="安装vscode"><a href="#安装vscode" class="headerlink" title="安装vscode"></a>安装vscode</h1><blockquote>
+<p><code>vscode</code> 安装之后， 安装项目所需插件。<br>   1.<strong>Veture</strong>、<br>   2.<strong>Prettier - Code formatter</strong>、<br>   3.<strong>Eslint</strong></p>
+</blockquote>
+<h1 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">├── babel.config.js  &#x2F;&#x2F; Babel转码器配置文件</span><br><span class="line">├── jsconfig.json  &#x2F;&#x2F; 你的文件所在目录下的所有js代码做出个性化支持</span><br><span class="line">├── mock  &#x2F;&#x2F; 模拟数据</span><br><span class="line">├── package-lock.json  &#x2F;&#x2F; 锁定依赖版本</span><br><span class="line">├── package.json &#x2F;&#x2F; 项目或者各种依赖包的描述等</span><br><span class="line">├── plopfile.js  &#x2F;&#x2F;模块plop入口文件</span><br><span class="line">├── postcss.config.js &#x2F;&#x2F; postcss处理css 平台配置文件</span><br><span class="line">├── public  &#x2F;&#x2F; index页面</span><br><span class="line">├── README.md &#x2F;&#x2F; 说明md文件</span><br><span class="line">├── src  </span><br><span class="line">|  ├── App.vue  &#x2F;&#x2F; vue 根几点App</span><br><span class="line">|  ├── assets &#x2F;&#x2F; 静态资源文件夹</span><br><span class="line">|  ├── common &#x2F;&#x2F; 公用变量以及系统配置文件</span><br><span class="line">|  |  ├── api.js</span><br><span class="line">|  |  ├── btn.js</span><br><span class="line">|  |  ├── constants.js</span><br><span class="line">|  |  └── settings.js</span><br><span class="line">|  ├── components &#x2F;&#x2F; 组件</span><br><span class="line">|  ├── directive &#x2F;&#x2F; 指令</span><br><span class="line">|  ├── filters &#x2F;&#x2F; 过滤器</span><br><span class="line">|  ├── icons &#x2F;&#x2F; svg </span><br><span class="line">|  ├── layout &#x2F;&#x2F; 系统布局文件</span><br><span class="line">|  ├── main.js &#x2F;&#x2F; 系统入口</span><br><span class="line">|  ├── mixins &#x2F;&#x2F; 代码复用</span><br><span class="line">|  ├── permission.js &#x2F;&#x2F; 权限路由控制等</span><br><span class="line">|  ├── router &#x2F;&#x2F; 路由文件</span><br><span class="line">|  ├── store &#x2F;&#x2F; 状态管理</span><br><span class="line">|  ├── styles &#x2F;&#x2F; 系统样式</span><br><span class="line">|  ├── utils &#x2F;&#x2F; 公用方法</span><br><span class="line">|  └── views &#x2F;&#x2F; 业务逻辑（*）</span><br><span class="line">└── vue.config.js &#x2F;&#x2F; vue 细化配置文件</span><br></pre></td></tr></table></figure>
+<h1 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h1><h2 id="修改-env-dev"><a href="#修改-env-dev" class="headerlink" title="修改.env.dev"></a>修改.env.dev</h2><p>  修改<code>VUE_APP_BASE_TARGET_API</code> 为你需要联调的后端地址</p>
+<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  npm install  &#x2F;&#x2F; 安装依赖（后面安装之后即不需要）</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">## 启动</span><br></pre></td></tr></table></figure>
+<p>npm run dev 启动<br>```</p>
+]]></content>
+      <categories>
+        <category>welink文档</category>
+      </categories>
+  </entry>
+  <entry>
     <title>vscode中关于 Vue的调试</title>
     <url>/vue/vue-debug.html</url>
     <content><![CDATA[<blockquote>
