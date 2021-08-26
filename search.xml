@@ -37,6 +37,7 @@
     <url>/hexo/hexo-1.html</url>
     <content><![CDATA[<h1 id="本地运行预览"><a href="#本地运行预览" class="headerlink" title="本地运行预览"></a>本地运行预览</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
 
+<h1 id="执行部署前置"><a href="#执行部署前置" class="headerlink" title="执行部署前置"></a>执行部署前置</h1><p>部署之间最好使用github sshkey来建立连接</p>
 <h1 id="加入资源文件"><a href="#加入资源文件" class="headerlink" title="加入资源文件"></a>加入资源文件</h1><blockquote>
 <p>想加入少量静态资源图片等文件</p>
 </blockquote>
@@ -59,6 +60,7 @@
 <h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><blockquote>
 <p>hexo 和 node 版本不匹配。这里使用nvm 进行降低版本。即可</p>
 </blockquote>
+<h1 id="执行部署报错fatal-unable-to-auto-detect-email-address"><a href="#执行部署报错fatal-unable-to-auto-detect-email-address" class="headerlink" title="执行部署报错fatal: unable to auto-detect email address"></a>执行部署报错fatal: unable to auto-detect email address</h1><p>对.deploy_git/git中的config文件添加：<br>[user]<br>    email = 邮箱<br>    name = 用户名</p>
 ]]></content>
       <categories>
         <category>github pages hexo建站</category>
