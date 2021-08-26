@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beginnerdone.github.io/doc.html</loc>
-    <lastmod>2021-07-27</lastmod>
+    <loc>https://beginnerdone.github.io/githubpages-website.html</loc>
+    <lastmod>2021-08-26</lastmod>
   </url>  <url>
-    <loc>https://beginnerdone.github.io/vue/vue-debug.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <loc>https://beginnerdone.github.io/hexo/hexo-1.html</loc>
+    <lastmod>2021-08-26</lastmod>
+  </url>  <url>
+    <loc>https://beginnerdone.github.io/React/React-1.html</loc>
+    <lastmod>2021-08-26</lastmod>
+  </url>  <url>
+    <loc>https://beginnerdone.github.io/Angular/angular-1.html</loc>
+    <lastmod>2021-08-26</lastmod>
+  </url>  <url>
+    <loc>https://beginnerdone.github.io/Node/Node-1.html</loc>
+    <lastmod>2021-08-26</lastmod>
+  </url>  <url>
+    <loc>https://beginnerdone.github.io/Vue/vue-1.html</loc>
+    <lastmod>2021-08-26</lastmod>
+  </url>  <url>
+    <loc>https://beginnerdone.github.io/doc.html</loc>
+    <lastmod>2021-08-26</lastmod>
   </url>  <url>
     <loc>https://beginnerdone.github.io/eslint.html</loc>
     <lastmod>2020-12-23</lastmod>
-  </url>  <url>
-    <loc>https://beginnerdone.github.io/article-1.html</loc>
-    <lastmod>2020-03-26</lastmod>
   </url>  <url>
     <loc>https://beginnerdone.github.io/github-artical.html</loc>
     <lastmod>2020-03-18</lastmod>
   </url>  <url>
     <loc>https://beginnerdone.github.io/createnewlayout.html</loc>
-    <lastmod>2020-03-18</lastmod>
-  </url>  <url>
-    <loc>https://beginnerdone.github.io/githubpages-website.html</loc>
     <lastmod>2020-03-18</lastmod>
   </url>
 </urlset>

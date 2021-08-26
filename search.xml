@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>React</title>
+    <url>/React/React-1.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>React</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Node</title>
+    <url>/Node/Node-1.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Vue</title>
+    <url>/Vue/vue-1.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Angular</title>
+    <url>/Angular/angular-1.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Angular</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo相关</title>
+    <url>/hexo/hexo-1.html</url>
+    <content><![CDATA[<h1 id="本地运行预览"><a href="#本地运行预览" class="headerlink" title="本地运行预览"></a>本地运行预览</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
+
+<h1 id="加入资源文件"><a href="#加入资源文件" class="headerlink" title="加入资源文件"></a>加入资源文件</h1><blockquote>
+<p>想加入少量静态资源图片等文件</p>
+</blockquote>
+<p>根目录的<code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">post_asset_folder:true</span><br></pre></td></tr></table></figure>
+<p>而资源最好放在同级的规划好的目录中，如下方式的同级目录</p>
+<h1 id="建立文档目录结构"><a href="#建立文档目录结构" class="headerlink" title="建立文档目录结构"></a>建立文档目录结构</h1><p>使用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new layout -p name&#x2F;name1</span><br></pre></td></tr></table></figure>
+<p>来建立相应的区块目录。相关文档放在一起<br>如：分别建立Angular、React、Vue、Node 区块</p>
+<p>分别执行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new layout -p Angular&#x2F;angular-1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new layout -p Angular&#x2F;angular-2</span><br></pre></td></tr></table></figure>
+<p>…..</p>
+<a id="more"></a>
+
+<p>生成目录结构</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source\_posts</span><br><span class="line">├── Angular</span><br><span class="line">|  ├── angular-1 &#x2F;&#x2F; 用于angular-1引用的。放置静态资源文件的文件夹·（anguarl-1&#x2F;xxx.png）</span><br><span class="line">|  └── angular-2 &#x2F;&#x2F; 用于angular-2引用的。放置静态资源文件的文件夹·</span><br><span class="line">|  ├── angular-1.md</span><br><span class="line">|  └── angular-2.md</span><br><span class="line">├── Node</span><br><span class="line">|  ├── Node-1 &#x2F;&#x2F; 放置静态资源文件的文件夹·</span><br><span class="line">|  └── Node-1.md</span><br><span class="line">├── test</span><br><span class="line">|  ├── test1 &#x2F;&#x2F; 放置静态资源文件的文件夹·</span><br><span class="line">|  └── test1.md</span><br><span class="line">└── Vue</span><br><span class="line">   ├── vue-1 &#x2F;&#x2F; 放置静态资源文件的文件夹·</span><br><span class="line">   └── vue-1.md</span><br></pre></td></tr></table></figure>
+
+<h1 id="运行报错TypeError-ERR-INVALID-ARG-TYPE"><a href="#运行报错TypeError-ERR-INVALID-ARG-TYPE" class="headerlink" title="运行报错TypeError [ERR_INVALID_ARG_TYPE]"></a>运行报错TypeError [ERR_INVALID_ARG_TYPE]</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">TypeError [ERR_INVALID_ARG_TYPE]: The &quot;mode&quot; argument must be integer. Received an instance of Object</span><br><span class="line">    at copyFile (fs.js:1972:10)</span><br></pre></td></tr></table></figure>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><blockquote>
+<p>hexo 和 node 版本不匹配。这里使用nvm 进行降低版本。即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>github pages hexo建站</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端运行</title>
     <url>/doc.html</url>
     <content><![CDATA[<h1 id="node安装"><a href="#node安装" class="headerlink" title="node安装"></a>node安装</h1><h2 id="方式一-："><a href="#方式一-：" class="headerlink" title="方式一 ："></a>方式一 ：</h2><blockquote>
@@ -15,8 +82,8 @@
 </blockquote>
 <p>   <strong>Windows</strong><br>    安装<a href="https://github.com/coreybutler/nvm-windows">nvm</a><br>    1.点击<a href="https://github.com/coreybutler/nvm-windows/releases">releases</a>进行安装<br>    2.选择最新的版本进行下载安装(<br>    <img src="/doc/3.png" alt="nvm"><br>    3.下载完成安装过程中。若出现以下提示，选择是让<code>nvm</code>管理原安装过的<code>node</code><br>    <img src="/doc/4.png" alt="nvm"><br>    4.安装之后常用命令</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm ls &#x2F;&#x2F; 查看目前已经安装的版本</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm install 14.5.4  &#x2F;&#x2F; 安装指定的版本的nodejs</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use 14.5.4  &#x2F;&#x2F; 使用指定版本的nodejs</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm install 14.15.4  &#x2F;&#x2F; 安装指定的版本的nodejs</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use 14.15.4  &#x2F;&#x2F; 使用指定版本的nodejs</span><br></pre></td></tr></table></figure>
 <h1 id="nrm安装"><a href="#nrm安装" class="headerlink" title="nrm安装"></a>nrm安装</h1><blockquote>
 <p>管理不同镜像源</p>
 </blockquote>
@@ -28,6 +95,8 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use taobao  &#x2F;&#x2F; 切换为淘宝镜像</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use taobao  &#x2F;&#x2F; 测试镜像速度</span><br></pre></td></tr></table></figure>
 <p><img src="/doc/5.png" alt="nvm"></p>
+<h1 id="vue-cli安装"><a href="#vue-cli安装" class="headerlink" title="vue-cli安装"></a>vue-cli安装</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g @vue&#x2F;cli</span><br></pre></td></tr></table></figure>
+
 <h1 id="安装vscode"><a href="#安装vscode" class="headerlink" title="安装vscode"></a>安装vscode</h1><blockquote>
 <p><code>vscode</code> 安装之后， 安装项目所需插件。<br>   1.<strong>Veture</strong>、<br>   2.<strong>Prettier - Code formatter</strong>、<br>   3.<strong>Eslint</strong></p>
 </blockquote>
@@ -40,28 +109,6 @@
       </categories>
   </entry>
   <entry>
-    <title>vscode中关于 Vue的调试</title>
-    <url>/vue/vue-debug.html</url>
-    <content><![CDATA[<blockquote>
-<p><a href="https://cn.vuejs.org/v2/cookbook/debugging-in-vscode.html">Vue官网给出的调试相关</a></p>
-</blockquote>
-<h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>安装插件<code>Debugger for Chrome</code></p>
-<h4 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h4><ol>
-<li>先运行<code>npm run dev</code> </li>
-<li>启动<code>debug</code></li>
-<li>其中<code>launch</code>配置文件中的端口号要和<code>vue.config.js</code>中的端口号一致</li>
-<li>启动之后会再次弹出一个<code>debug</code>的页面。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>vscode</tag>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>eslint 规则</title>
     <url>/eslint.html</url>
     <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;no-alert&quot;: 0,&#x2F;&#x2F;禁止使用alert confirm prompt</span><br><span class="line">&quot;no-array-constructor&quot;: 2,&#x2F;&#x2F;禁止使用数组构造器</span><br><span class="line">&quot;no-bitwise&quot;: 0,&#x2F;&#x2F;禁止使用按位运算符</span><br><span class="line">&quot;no-caller&quot;: 1,&#x2F;&#x2F;禁止使用arguments.caller或arguments.callee</span><br><span class="line">&quot;no-catch-shadow&quot;: 2,&#x2F;&#x2F;禁止catch子句参数与外部作用域变量同名</span><br></pre></td></tr></table></figure>
@@ -72,30 +119,6 @@
       </categories>
       <tags>
         <tag>Eslint</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>报错 Could not read from remote repository. Please make sure you have the correct access rights and the repository exists.</title>
-    <url>/article-1.html</url>
-    <content><![CDATA[<blockquote>
-<p> 最近部署hexo个人博客的时候 ，报错<br><img src="https://img-blog.csdnimg.cn/20200326110528149.png" alt="在这里插入图片描述"></p>
-</blockquote>
-<a id="more"></a>
-<p>然后一顿操作都没用，最后羞耻的发现 163邮箱需要验证。。。。为啥163邮箱需要验证。。。163邮箱咋地了<br><img src="https://img-blog.csdnimg.cn/20200326110641407.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200326110626444.png" alt="在这里插入图片描述"><br>最后直接吧163邮箱更换为outlook邮箱了<br><img src="https://img-blog.csdnimg.cn/20200326110828442.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI3MzM1MDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在次执行</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<p>完美部署</p>
-<p><strong>千里之行<br>始于足下</strong></p>
-]]></content>
-      <categories>
-        <category>github pages hexo建站</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -160,6 +183,8 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo  init</span><br></pre></td></tr></table></figure>
 <p>在初始化的文件夹中下载依赖</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h3 id="安装hexo-deployer-git"><a href="#安装hexo-deployer-git" class="headerlink" title="安装hexo-deployer-git"></a>安装hexo-deployer-git</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
 <p>注意<code>_config.yml</code>文件，网站的 配置 信息，可以在此配置大部分的参数。具体参考<a href="https://hexo.io/zh-cn/docs/configuration">配置信息</a></p>
 <h3 id="修改-config-yml文件并部署到github上"><a href="#修改-config-yml文件并部署到github上" class="headerlink" title="修改_config.yml文件并部署到github上"></a>修改_config.yml文件并部署到github上</h3><h4 id="修改-config-yml中"><a href="#修改-config-yml中" class="headerlink" title="修改_config.yml中"></a>修改_config.yml中</h4><p>原有：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: ‘’</span><br></pre></td></tr></table></figure>
