@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>阿里云Docker+Nginx部署项目</title>
+    <url>/Docker/nginx.html</url>
+    <content><![CDATA[<p>购买的阿里云服务器已经安装了的<code>Docker</code>.所以这里只装nginx镜像即可即可</p>
+<h2 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker pull nginx</span><br></pre></td></tr></table></figure>
+<p>查询已安装镜像</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><img src="/Docker/nginx/1.png" alt="查询镜像"></p>
+<h2 id="启动nginx容器测试"><a href="#启动nginx容器测试" class="headerlink" title="启动nginx容器测试"></a>启动nginx容器测试</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker run --name test-nginx -p 8080:80 -d nignx</span><br></pre></td></tr></table></figure>
+<p><code>name</code> 容器名称。<br><code>p</code> <code>8080</code>端口映射到80 （<font color="red">注意在阿里云安全中要添加8080端口的规则</font>）</p>
+<p><img src="/Docker/nginx/2.png" alt="启动"></p>
+<h2 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h2><p>将主机目录挂载到nginx容器中</p>
+<h3 id="新建需要挂载的目录"><a href="#新建需要挂载的目录" class="headerlink" title="新建需要挂载的目录"></a>新建需要挂载的目录</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir -p &#x2F;welink&#x2F;nginx&#x2F;html &#x2F;welink&#x2F;nginx&#x2F;logs &#x2F;welink&#x2F;nginx&#x2F;conf &#x2F;welink&#x2F;nginx&#x2F;conf.d</span><br></pre></td></tr></table></figure>
+
+<p><code>html</code>目录用于存放静态资源文件（web站点资源等）<br><code>logs</code>存放日志<br><code>conf</code>存放配置文件<br><code>conf.d</code> 存放多域名的配置文件</p>
+<p>其中<code>conf</code>和<code>conf.d</code>的关系：<br>是需要我们把配置文件拆分开来,在<code>/etc/nginx/conf.d/</code> 文件建立对应的域名配置文件,比如 <code>/etc/nginx/conf.d/123.com.conf</code><br>只需要在原来文件<code>/etc/nginx/nginx.conf 的http</code> 块下加一句话就可以了:<br><code>include /etc/nginx/conf.d/*.conf</code>;</p>
+<h3 id="复制默认文件到主机目录中"><a href="#复制默认文件到主机目录中" class="headerlink" title="复制默认文件到主机目录中"></a>复制默认文件到主机目录中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker cp test-nginx:&#x2F;etc&#x2F;nginx&#x2F;nginx.conf &#x2F;welink&#x2F;nginx&#x2F;conf</span><br><span class="line">docker cp test-nginx:&#x2F;etc&#x2F;nginx&#x2F;conf.d&#x2F;default.conf &#x2F;welink&#x2F;nginx&#x2F;conf.d</span><br></pre></td></tr></table></figure>
+<h3 id="查询容器"><a href="#查询容器" class="headerlink" title="查询容器"></a>查询容器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+<p><img src="/Docker/nginx/3.png" alt="查询启动容器"></p>
+<h3 id="停止并删除容器"><a href="#停止并删除容器" class="headerlink" title="停止并删除容器"></a>停止并删除容器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker stop test-nginx</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker rm -f 0abbf56d882a</span><br></pre></td></tr></table></figure>
+<h3 id="运行并将主机目录挂载到容器镜像目录中"><a href="#运行并将主机目录挂载到容器镜像目录中" class="headerlink" title="运行并将主机目录挂载到容器镜像目录中"></a>运行并将主机目录挂载到容器镜像目录中</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker run -d \</span><br><span class="line">-p 8080:80 \</span><br><span class="line">--name test-nginx \</span><br><span class="line">-v &#x2F;welink&#x2F;nginx&#x2F;html:&#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html \</span><br><span class="line">-v &#x2F;welink&#x2F;nginx&#x2F;conf&#x2F;nginx.conf:&#x2F;etc&#x2F;nginx&#x2F;nginx.conf \</span><br><span class="line">-v &#x2F;welink&#x2F;nginx&#x2F;conf.d:&#x2F;etc&#x2F;nginx&#x2F;conf.d \</span><br><span class="line">-v &#x2F;welink&#x2F;logs:&#x2F;var&#x2F;log&#x2F;nginx \</span><br><span class="line">nginx</span><br></pre></td></tr></table></figure>
+<h2 id="修改html并预览"><a href="#修改html并预览" class="headerlink" title="修改html并预览"></a>修改html并预览</h2><p>这里直接用宝塔面板新建一个<code>html</code>文件<br><img src="/Docker/nginx/4.png" alt="查询启动容器"><br> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;IE&#x3D;edge&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;Hello World Nginx&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><br>效果：<br><img src="/Docker/nginx/5.png" alt="查询启动容器"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>安装<code>nginx</code></li>
+<li>新建主机目录</li>
+<li>复制默认文件到主机目录中</li>
+<li>挂载主机目录到容器镜像中</li>
+<li>具体<code>nginx</code>配置可视情况自己修改</li>
+</ol>
+]]></content>
+      <categories>
+        <category>AliYun</category>
+      </categories>
+  </entry>
+  <entry>
     <title>React</title>
     <url>/React/React-1.html</url>
     <content><![CDATA[]]></content>

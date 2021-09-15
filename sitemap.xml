@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://beginnerdone.github.io/Docker/nginx.html</loc>
+    
+    <lastmod>2021-09-15T06:54:51.507Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://beginnerdone.github.io/hexo/hexo-1.html</loc>
     
     <lastmod>2021-08-26T09:03:10.302Z</lastmod>
