@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>阿里云Docker+Nginx部署同端口多个Vue前端项目</title>
+    <url>/Docker/nginx-2.html</url>
+    <content><![CDATA[<h1 id="Vue打包"><a href="#Vue打包" class="headerlink" title="Vue打包"></a>Vue打包</h1><blockquote>
+<p><code>Vue.config.js</code>新增  <code>publicPath: &quot;./&quot;</code>或者写死也行，<a href="https://cli.vuejs.org/zh/config/#publicpath]">vue-cl</a>关于publishPath的解释</p>
+</blockquote>
+<h1 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h1><p>删除<code>conf.d</code>中的<code>default.conf</code>分别建立不同的项目配置。比如这里叫<code>demo1和demo2</code>，新建两个文件<code>demo1.conf和demo2.conf</code><br>并且配置中更改<code>location</code><br><code>demo1.conf</code> 中 <code>root   /usr/share/nginx/html;改为 /usr/share/nginx/html/demo1</code><br><code>demo2.conf</code> 中 <code>root   /usr/share/nginx/html;改为 /usr/share/nginx/html/demo2</code></p>
+<p>然后在主机目录<code>html</code>中新建<code>demo1</code>和<code>demo2</code>文件夹。并分别上传项目即可</p>
+]]></content>
+      <categories>
+        <category>AliYun</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>nginx</tag>
+        <tag>前端部署</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>layout</title>
+    <url>/Angular/angular-1-1.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>阿里云Docker+Nginx部署项目</title>
     <url>/Docker/nginx.html</url>
     <content><![CDATA[<p>购买的阿里云服务器已经安装了的<code>Docker</code>.所以这里只装nginx镜像即可即可</p>
@@ -35,6 +58,11 @@
       <categories>
         <category>AliYun</category>
       </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>nginx</tag>
+        <tag>前端部署</tag>
+      </tags>
   </entry>
   <entry>
     <title>React</title>
@@ -58,14 +86,6 @@
     <content><![CDATA[]]></content>
       <categories>
         <category>Vue</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Angular</title>
-    <url>/Angular/angular-1.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Angular</category>
       </categories>
   </entry>
   <entry>

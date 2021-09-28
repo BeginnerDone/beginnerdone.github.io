@@ -200,6 +200,135 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://beginnerdone.github.io/Docker/nginx-2.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.png">
+      <meta itemprop="name" content="BeginnerDone">
+      <meta itemprop="description" content="Keep The Beginner's Mind <br /> 真正的大师永远怀着一颗学徒的心">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beginner的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Docker/nginx-2.html" class="post-title-link" itemprop="url">阿里云Docker+Nginx部署同端口多个Vue前端项目</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-09-28 15:32:24 / 修改时间：15:44:04" itemprop="dateCreated datePublished" datetime="2021-09-28T15:32:24+08:00">2021-09-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AliYun/" itemprop="url" rel="index"><span itemprop="name">AliYun</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Vue打包"><a href="#Vue打包" class="headerlink" title="Vue打包"></a>Vue打包</h1><blockquote>
+<p><code>Vue.config.js</code>新增  <code>publicPath: &quot;./&quot;</code>或者写死也行，<a href="https://cli.vuejs.org/zh/config/#publicpath]">vue-cl</a>关于publishPath的解释</p>
+</blockquote>
+<h1 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h1><p>删除<code>conf.d</code>中的<code>default.conf</code>分别建立不同的项目配置。比如这里叫<code>demo1和demo2</code>，新建两个文件<code>demo1.conf和demo2.conf</code><br>并且配置中更改<code>location</code><br><code>demo1.conf</code> 中 <code>root   /usr/share/nginx/html;改为 /usr/share/nginx/html/demo1</code><br><code>demo2.conf</code> 中 <code>root   /usr/share/nginx/html;改为 /usr/share/nginx/html/demo2</code></p>
+<p>然后在主机目录<code>html</code>中新建<code>demo1</code>和<code>demo2</code>文件夹。并分别上传项目即可</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://beginnerdone.github.io/Angular/angular-1-1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.png">
+      <meta itemprop="name" content="BeginnerDone">
+      <meta itemprop="description" content="Keep The Beginner's Mind <br /> 真正的大师永远怀着一颗学徒的心">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beginner的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Angular/angular-1-1.html" class="post-title-link" itemprop="url">layout</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-09-28 15:31:27" itemprop="dateCreated datePublished" datetime="2021-09-28T15:31:27+08:00">2021-09-28</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://beginnerdone.github.io/Docker/nginx.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -223,10 +352,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-09-15 11:42:49 / 修改时间：14:54:51" itemprop="dateCreated datePublished" datetime="2021-09-15T11:42:49+08:00">2021-09-15</time>
+              <time title="创建时间：2021-09-15 11:42:49" itemprop="dateCreated datePublished" datetime="2021-09-15T11:42:49+08:00">2021-09-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-09-28 15:33:47" itemprop="dateModified" datetime="2021-09-28T15:33:47+08:00">2021-09-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -446,73 +581,6 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://beginnerdone.github.io/Angular/angular-1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.png">
-      <meta itemprop="name" content="BeginnerDone">
-      <meta itemprop="description" content="Keep The Beginner's Mind <br /> 真正的大师永远怀着一颗学徒的心">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Beginner的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Angular/angular-1.html" class="post-title-link" itemprop="url">Angular</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-08-26 14:04:48 / 修改时间：14:22:57" itemprop="dateCreated datePublished" datetime="2021-08-26T14:04:48+08:00">2021-08-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Angular/" itemprop="url" rel="index"><span itemprop="name">Angular</span></a>
                 </span>
             </span>
 
@@ -875,88 +943,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://beginnerdone.github.io/github-artical.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.png">
-      <meta itemprop="name" content="BeginnerDone">
-      <meta itemprop="description" content="Keep The Beginner's Mind <br /> 真正的大师永远怀着一颗学徒的心">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Beginner的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/github-artical.html" class="post-title-link" itemprop="url">github pages+hexo 绑定域名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-13 15:13:03" itemprop="dateCreated datePublished" datetime="2020-03-13T15:13:03+08:00">2020-03-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-18 10:43:23" itemprop="dateModified" datetime="2020-03-18T10:43:23+08:00">2020-03-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/github-pages-hexo%E5%BB%BA%E7%AB%99/" itemprop="url" rel="index"><span itemprop="name">github pages hexo建站</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>上一章说到<a href="https://blog.csdn.net/u012733501/article/details/104815568">github pages+hexo 搭建自己的个人博客</a>  ，尚未关联自己的域名，毕竟<code>github pages</code>的 <code>username.github.io</code> 并不怎么好记和美观</p>
-<hr>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/github-artical.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1029,20 +1015,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

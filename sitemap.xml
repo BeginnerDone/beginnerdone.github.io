@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://beginnerdone.github.io/Docker/nginx-2.html</loc>
+    
+    <lastmod>2021-09-28T07:44:04.592Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://beginnerdone.github.io/Docker/nginx.html</loc>
     
-    <lastmod>2021-09-15T06:54:51.507Z</lastmod>
+    <lastmod>2021-09-28T07:33:47.992Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://beginnerdone.github.io/Angular/angular-1-1.html</loc>
+    
+    <lastmod>2021-09-28T07:31:27.570Z</lastmod>
     
   </url>
   
@@ -40,13 +54,6 @@
     <loc>https://beginnerdone.github.io/React/React-1.html</loc>
     
     <lastmod>2021-08-26T06:23:38.117Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://beginnerdone.github.io/Angular/angular-1.html</loc>
-    
-    <lastmod>2021-08-26T06:22:57.576Z</lastmod>
     
   </url>
   
