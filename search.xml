@@ -153,7 +153,10 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use taobao  &#x2F;&#x2F; 切换为淘宝镜像</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm use taobao  &#x2F;&#x2F; 测试镜像速度</span><br></pre></td></tr></table></figure>
 <p><img src="/doc/5.png" alt="nvm"></p>
-<h1 id="vue-cli安装"><a href="#vue-cli安装" class="headerlink" title="vue-cli安装"></a>vue-cli安装</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g @vue&#x2F;cli</span><br></pre></td></tr></table></figure>
+<h1 id="vue-cli安装-非必须"><a href="#vue-cli安装-非必须" class="headerlink" title="vue-cli安装 (非必须)"></a>vue-cli安装 (非必须)</h1><blockquote>
+<p>当你需要cli新建项目等，才进行安装。一般运行不需要安装</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g @vue&#x2F;cli</span><br></pre></td></tr></table></figure>
 
 <h1 id="安装vscode"><a href="#安装vscode" class="headerlink" title="安装vscode"></a>安装vscode</h1><blockquote>
 <p><code>vscode</code> 安装之后， 安装项目所需插件。<br>   1.<strong>Veture</strong>、<br>   2.<strong>Prettier - Code formatter</strong>、<br>   3.<strong>Eslint</strong></p>
