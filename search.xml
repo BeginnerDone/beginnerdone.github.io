@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>修订服务器默认端口22</title>
+    <url>/Linux/linux-1.html</url>
+    <content><![CDATA[<h1 id="查看ssh端口"><a href="#查看ssh端口" class="headerlink" title="查看ssh端口"></a>查看ssh端口</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat -anp|grep ssh</span><br></pre></td></tr></table></figure>
+
+<h1 id="修改端口"><a href="#修改端口" class="headerlink" title="修改端口"></a>修改端口</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config</span><br></pre></td></tr></table></figure>
+<p>看到#Port 22 ,可以再加一行<br>Port xxxx端口（10000~65535区间）</p>
+<h1 id="重启ssh"><a href="#重启ssh" class="headerlink" title="重启ssh"></a>重启ssh</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">service sshd restart</span><br></pre></td></tr></table></figure>
+
+<h1 id="查看监听的端口"><a href="#查看监听的端口" class="headerlink" title="查看监听的端口"></a>查看监听的端口</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo netstat -tunlp | grep &quot;ssh&quot;</span><br></pre></td></tr></table></figure>
+
+<h1 id="测试链接"><a href="#测试链接" class="headerlink" title="测试链接"></a>测试链接</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh root@localhost -p xxxx端口</span><br></pre></td></tr></table></figure>
+<p>中途会让你输入你的密码</p>
+<h1 id="继续第二步骤删除port-22"><a href="#继续第二步骤删除port-22" class="headerlink" title="继续第二步骤删除port 22"></a>继续第二步骤删除port 22</h1>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+  </entry>
+  <entry>
     <title>阿里云Docker+Nginx部署同端口多个Vue前端项目</title>
     <url>/Docker/nginx-2.html</url>
     <content><![CDATA[<h1 id="Vue打包"><a href="#Vue打包" class="headerlink" title="Vue打包"></a>Vue打包</h1><blockquote>
