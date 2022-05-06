@@ -135,7 +135,9 @@
 <p>hexo 和 node 版本不匹配。这里使用nvm 进行降低版本。即可</p>
 </blockquote>
 <h1 id="执行部署报错fatal-unable-to-auto-detect-email-address"><a href="#执行部署报错fatal-unable-to-auto-detect-email-address" class="headerlink" title="执行部署报错fatal: unable to auto-detect email address"></a>执行部署报错fatal: unable to auto-detect email address</h1><p>对.deploy_git/git中的config文件添加：<br>[user]<br>    email = 邮箱<br>    name = 用户名</p>
-]]></content>
+<h1 id="运行部署"><a href="#运行部署" class="headerlink" title="运行部署"></a>运行部署</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>github pages hexo建站</category>
       </categories>

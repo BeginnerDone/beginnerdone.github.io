@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://beginnerdone.github.io/hexo/hexo-1.html</loc>
+    
+    <lastmod>2022-05-06T07:56:32.009Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://beginnerdone.github.io/Linux/linux-1.html</loc>
     
     <lastmod>2022-05-06T07:43:47.021Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://beginnerdone.github.io/Angular/angular-1-1.html</loc>
     
     <lastmod>2021-09-28T07:31:27.570Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://beginnerdone.github.io/hexo/hexo-1.html</loc>
-    
-    <lastmod>2021-08-26T09:03:10.302Z</lastmod>
     
   </url>
   
