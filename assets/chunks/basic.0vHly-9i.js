@@ -1,0 +1,1 @@
+import{_ as s,B as o,o as a,b as c,w as n,j as r}from"./framework.dSRS6Dfv.js";const _={};function d(l,e){const t=o("w-card");return a(),c(t,{state:"启用",title:"测试标题","state-type":"success"},{default:n(()=>e[0]||(e[0]=[r("div",null,"测试内容",-1)])),_:1})}const i=s(_,[["render",d]]);export{i as default};

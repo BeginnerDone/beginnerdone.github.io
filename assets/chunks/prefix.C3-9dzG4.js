@@ -1,0 +1,1 @@
+import{_ as t,B as o,o as c,b as s}from"./framework.dSRS6Dfv.js";const n={};function r(a,_){const e=o("w-statistic");return c(),s(e,{prefix:"￥",value:23355})}const f=t(n,[["render",r]]);export{f as default};
