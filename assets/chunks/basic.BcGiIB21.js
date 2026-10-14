@@ -1,0 +1,1 @@
+import{d as a,B as n,o,c as s,G as d}from"./framework.dSRS6Dfv.js";const c={class:"vp-raw"},i=a({__name:"basic",setup(r){const e=[{dataIndex:"name",title:"姓名"},{dataIndex:"age",title:"年龄"},{dataIndex:"address",title:"地址"},{dataIndex:"date",title:"加入时间"}];return(l,_)=>{const t=n("w-table");return o(),s("div",c,[d(t,{url:"/table/page",headers:e})])}}});export{i as default};
